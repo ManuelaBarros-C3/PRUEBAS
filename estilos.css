@@ -7,15 +7,24 @@
     box-sizing: border-box;
 } 
 
+h2 {
+    color:orange
+}
+
+h4 {
+    color:skyblue
+}
 .preguntas-frecuentes {
     display: flex;
     flex-wrap: wrap;
 }
 
 .preguntas {
-    background-color: lightsteelblue;
+    background-color: skyblue;
     display: flex;
     flex-wrap: wrap;
-    padding:20px
-    margin:20px
+    align-content: center;
+    padding:20px;
+    margin-bottom: 20px;
+    border-radius: 30px;
 }
