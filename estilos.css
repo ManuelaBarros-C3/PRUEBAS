@@ -174,6 +174,14 @@ right: 46%;
 
 /*MANU - PREGUNTAS FRECUENTES + TIPS*/
 
+.main-pre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 0px 200px 0px;
+    gap: 120px;
+}
+
 h2 {
     color:orange
 }
@@ -197,6 +205,7 @@ h4 {
     margin-bottom: 20px;
     border-radius: 30px;
     flex-direction: column;
+    width: 100%;
 }
 
 .imagenes-tips {
@@ -210,14 +219,16 @@ h4 {
     text-decoration: underline;
     text-decoration-color: #97C9DD;
     margin-bottom: 20px;
-    align-content: center;
+    align-items: center;
     display: flex;
+    flex-direction: column ;
 }
 
 .tips-preguntas {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 70%;
 }
 
 .bloque-respuesta {
@@ -225,7 +236,8 @@ h4 {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding:50px;
+    padding:50px 0px 60px 300px;
+    width: 70%;
 }
 
 .texto-contenido_preguntas {
@@ -233,11 +245,19 @@ h4 {
     flex-direction: column;
 }
 
-.contenedor-tips {
+.contenedor-tip1 {
     display:flex;
     flex-direction: row;
     align-items: center;
     gap:20px;
+}
+
+.contenedor-tip2 {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    gap:20px;
+    padding: 0px 0px 0px 40px;
 }
 
 .bloque-izquierda {
@@ -245,14 +265,6 @@ h4 {
 }
 
 .bloque-derecha{
-    display: flex;
+    display: flex;s
 }
-
-@media screen and (max-width: 600px)
-{
-     header {
-        padding: 20px;
-        margin:0px;
-    }
-
-}
+/*FIN PREGUNTAS FRECUENTES +TIPS*/

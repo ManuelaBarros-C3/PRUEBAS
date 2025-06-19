@@ -1,33 +1,46 @@
 <!DOCTYPE html>
 <html>
 <head>
+   <!---BORRAR CUANDO LO PASEN--->
     <meta charset="UTF-8" />
     <title>pruebas</title>
     <link href="estilos.css" rel="stylesheet"/>
+</head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="" type="image/x-icon" />     
-     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <title>Odontoquilmes</title>
 </head>
 <body>
-         <header class="header_container"> 
-  <a href="index.html">
-    <img class="imgprincipal" src="img/iconos/muelas/web/logo-consuodonto.png" alt="logo">
-  </a>
-            <nav class="items">
-                <ul>
-                    <li><a href="preguntas.html">Preguntas frecuentes</a></li>
-                    <li><a href="profesionales.html">Profesionales</a></li>
-                    <li><a href="index.html#tratamientos">Tratamientos</a></li>
-                    <li> <a href="turnos.html">Turnos</a></li>
-                </ul>
-            </nav>
+     <header class="header_container">
+        <a href="index.html">
+            <img class="imgprincipal" src="img/iconos/muelas/web/logo-consuodonto.png" alt="logo" width="270"
+                height="90">
+        </a>
+
+        <button id="abrir" class="abrir-menu">
+            <img src="img/iconos/icono-nav/menu-hamburguesa-01.svg" alt="Abrir menú" width="30" height="30">
+        </button>
+
+        <nav id="nav" class="items">
+            <button id="cerrar" class="cerrar-menu">
+                <img src="img/iconos/icono-nav/close.svg" alt="Cerrar menú" width="30" height="30">
+            </button>
+            <ul>
+                <li><a href="preguntas.html">Preguntas frecuentes</a></li>
+                <li><a href="profesionales.html">Profesionales</a></li>
+                <li><a href="index.html#tratamientos">Tratamientos</a></li>
+                <li> <a href="turnos.html">Turnos</a></li>
+            </ul>
+        </nav>
     </header>
-    <main>
+    <main class="main-pre">
         <section class="preguntas-frecuentes">
+            <h2 class="subrayado">PREGUNTAS FRECUENTES</h2>
             <article>
-                <h2 class="subrayado">PREGUNTAS FRECUENTES</h2>
                     <details>
                         <summary class="preguntas">1-¿Cada cuánto tiempo debo acudir al dentista?</summary>
                         <p class="bloque-respuesta">Se recomienda visitar al dentista cada 6 meses para realizar controles y limpiezas preventivas. Esta frecuencia ayuda a detectar problemas a tiempo y mantener una buena salud bucal. Sin embargo, puede variar según las necesidades de cada paciente.</p>
@@ -53,15 +66,15 @@
         <section class="tips-preguntas">
                 <h2 class="subrayado">TIPS PARA TU CUIDADO DENTAL</h2>
              <div class="bloque-izquierda">
-            <article class="contenedor-tips">
+            <article class="contenedor-tip1">
                 <img class="imagenes-tips" src="img/cepillado-dental.PNG" alt="muela-cepillo-dientes" height="180px" width="200px">
                 <div class="texto-contenido_preguntas">
                 <h4>Cepillado dental</h4>
                     <p>El cepillado es fundamental para eliminar la placa bacteriana y los restos de comida. Se recomienda hacerlo al menos dos veces al día, usando un cepillo suave y pasta dental con flúor.</p>
                 </div>
                 </article>
-            <article class="contenedor-tips">
-                <img class="imagenes-tips" src="img/enjuague-bucal.PNG" alt="muela-enjuague-dientes" height="185px" width="165px">
+            <article class="contenedor-tip1">
+                <img class="imagenes-tips" src="img/enjuague-bucal.PNG" alt="muela-enjuague-dientes" height="190px" width="170px">
                 <div class="texto-contenido_preguntas">
                 <h4>Enjuague Bucal</h4>
                     <p>Complementa la higiene bucal eliminando bacterias y dejando una sensación de frescura. Es útil para prevenir el mal aliento y reforzar la protección contra las caries.</p>
@@ -69,14 +82,14 @@
             </div>
             <div class="bloque-derecha">
                 </article>
-            <article class="contenedor-tips">
+            <article class="contenedor-tip1">
                 <img class="imagenes-tips" src="img/uso-hilo-dental.PNG" alt="muela-hilo-dental" height="190px" width="200px">
                 <div class="texto-contenido_preguntas">
                 <h4>Uso del hilo dental</h4>
                     <p>El hilo dental limpia las zonas entre los dientes donde el cepillo no llega. Su uso diario previene caries interdentales y cualquier tipo de problema  en las encías.</p>
                 </div>
             </article>
-            <article class="contenedor-tips">
+            <article class="contenedor-tip2">
                 <img class="imagenes-tips" src="img/limpieza-profesional.PNG" alt="muela-limpieza-dientes" height="180px" width="170px">
                 <div class="texto-contenido_preguntas">
                 <h4>Limpieza Profesional</h4>
@@ -87,44 +100,48 @@
         </section>
     </main>
     <footer class="footer">
-    <section class="container_botonera">
-        <h3 class="botonera_h3">BOTONERA</h3>
-                <ul class="container_ul">
-                  <li><a href="tratamientos">Tratamientos</a></li>
-                  <li><a href="turnos.html">Turnos</a></li>
-                  <li><a href="turnos.html">Contacto</a></li>
-                  <li><a href="turnos.html">Mi cuenta</a></li>
-                  <li><a href="index.html#obrasocial">Obra Social</a></li>
-                  <li><a href="turnos.html">Ubicación</a></li>
-                  <li><a href="index.html#precio">Precios</a></li>
-                  <li><a href="index.html">¿Quiénes Somos?</a></li>
-                  <li><a href="preguntas.html">Preguntas Frecuentes</a></li>
-                  <li><a href="profesionales.html">Profesionales</a></li>
+        <div class="container_botonera">
+            <h3 class="botonera_h3">BOTONERA</h3>
+            <div class="botonera_dos_columnas">
+                <ul>
+                    <li><a href="tratamientos">Tratamientos</a></li>
+                    <li><a href="turnos.html">Turnos</a></li>
+                    <li><a href="turnos.html">Contacto</a></li>
+                    <li><a href="turnos.html">Mi cuenta</a></li>
+                    <li><a href="index.html#obrasocial">Obra Social</a></li>
                 </ul>
-    </section>
-
-    <section class="parte_equipo">
-      <img class="img_muelafooter" src="img/footer/boton-subir-web.png">
-        <p class="p_footer">¿Querés formar parte de nuestro equipo?</p>
-          <p><a href="formulario">Formulario</a></p>
-    </section>
- 
-  <section class="redes">
-        <article>
-            <ul>
-                <li><a href="#"><img src="img/iconos/redes/ig.png" alt="Instagram"></a></li>
-                <li><a href="#"><img src="img/iconos/redes/img-logo-youtube.svg.png" alt="YouTube"></a></li>
-                <li><a href="#"><img src="img/iconos/redes/fb.png" alt="Facebook"></a></li>
-                <li><a href="#"><img src="img/iconos/redes/tw.png" alt="Twitter"></a></li>
-            </ul>
-        </article>
-        <article>
-            <p class="redes_p">Horarios: Lu. a Vi. 9 a 18 hs.</p>
-            <p class="redes_p">Email de consultorio: info@odontoquilmes.com.ar</p>
-            <p class="redes_p">Dirección Principal: Quilmes - Alvear 674 oficina 1</p>
-            <p class="redes_p">Número Telefónico: +54 1166004130 </p>
-        </section>
-
+                <ul>
+                    <li><a href="turnos.html">Ubicación</a></li>
+                    <li><a href="index.html#precio">Precios</a></li>
+                    <li><a href="index.html">¿Quiénes Somos?</a></li>
+                    <li><a href="preguntas.html">Preguntas Frecuentes</a></li>
+                    <li><a href="profesionales.html">Profesionales</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="parte_equipo">
+            <img class="img_muelafooter" src="img/footer/boton-subir-web.png">
+            <div class="footer_formulario">
+                <p class="p_footer">¿Querés formar parte de nuestro equipo?</p>
+                <p><a href="formulario">Formulario</a></p>
+            </div>
+        </div>
+        <div class="redes">
+            <div>
+                <ul>
+                    <li><a href="#"><img src="img/iconos/redes/img-logo-instagram-01.svg" alt="Instagram"></a></li>
+                    <li><a href="#"><img src="img/iconos/redes/img-logo-youtube.svg.svg" alt="YouTube"></a></li>
+                    <li><a href="#"><img src="img/iconos/redes/img-logo-facebook.svg.svg" alt="Facebook"></a></li>
+                    <li><a href="#"><img src="img/iconos/redes/img-logo-twitter.svg.svg" alt="Twitter"></a></li>
+                </ul>
+            </div>
+            <div class="redes-txt">
+                <p class="redes_p">Horarios: Lu. a Vi. 9 a 18 hs.</p>
+                <p class="redes_p">Email de consultorio: info@odontoquilmes.com.ar</p>
+                <p class="redes_p">Dirección Principal: Quilmes - Alvear 674 oficina 1</p>
+                <p class="redes_p">Número Telefónico: +54 1166004130 </p>
+            </div>
+        </div>
         <div class="footer-bottom">
             <p>© 2025 Odonto Quilmes. Todos los derechos reservados. </p>
             <p>| Términos y condiciones | Política de privacidad</p>
