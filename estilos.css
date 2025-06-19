@@ -7,24 +7,139 @@
     box-sizing: border-box;
 } 
 
+.header_container{
+  max-width: 100vw;
+  height: 15vh;
+  background-color: #97C9DD;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Lato"; 
+}
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background:#97C9DD;
+  color: #fff;
+  position: relative;
+}
+
+.footer img {
+  margin-bottom: 20px;
+}
+
+.container_botonera {
+  flex: 1;
+  flex-direction: column;
+  display: flex;
+  margin: 0 auto;
+  padding: 20px 0px 0px 100px;
+
+}
+
+.container_botonera ul {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 10px 0; 
+  list-style: none;
+}
+
+.container_botonera ul li {
+  flex: 0 0 50%; 
+}
+
+.container_botonera li a {
+  color: #0E1F35;
+  text-decoration: none;
+}
+
+.container_botonera li a:hover {
+  color: #EF8057;
+}
+
+.botonera_h3 {
+  margin-bottom: 15px;
+  color: #0E1F35;
+}
+
+.container_botonera a {
+  color: #0E1F35;
+  text-decoration: none;
+}
+
+.container_botonera a:hover {
+  color: #EF8057;
+}
+
 h2 {
     color:orange
 }
 
 h4 {
-    color:skyblue
+    color:#97C9DD;
 }
 .preguntas-frecuentes {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
 }
 
 .preguntas {
-    background-color: skyblue;
+    background-color:#97C9DD;
     display: flex;
-    flex-wrap: wrap;
     align-content: center;
     padding:20px;
     margin-bottom: 20px;
     border-radius: 30px;
+    flex-direction: column;
+}
+
+.imagenes-tips {
+    display:flex;
+    flex-direction: column;
+    align-content: center ;
+}
+
+.subrayado {
+    color:orange;
+    text-decoration: underline;
+    text-decoration-color: #97C9DD;
+    margin-bottom: 20px;
+    align-content: center;
+    display: flex;
+}
+
+.tips-preguntas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bloque-respuesta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding:50px;
+}
+
+.texto-contenido_preguntas {
+    display:flex;
+    flex-direction: column;
+}
+
+.contenedor-tips {
+     display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.bloque-izquierda {
+    display:flex;
+}
+
+.bloque-derecha{
+    display: flex;
 }

@@ -4,48 +4,131 @@
     <meta charset="UTF-8" />
     <title>pruebas</title>
     <link href="estilos.css" rel="stylesheet"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="" type="image/x-icon" />     
+     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <title>Odontoquilmes</title>
 </head>
 <body>
-    <header>
-
+         <header class="header_container"> 
+  <a href="index.html">
+    <img class="imgprincipal" src="img/iconos/muelas/web/logo-consuodonto.png" alt="logo">
+  </a>
+            <nav class="items">
+                <ul>
+                    <li><a href="preguntas.html">Preguntas frecuentes</a></li>
+                    <li><a href="profesionales.html">Profesionales</a></li>
+                    <li><a href="index.html#tratamientos">Tratamientos</a></li>
+                    <li> <a href="turnos.html">Turnos</a></li>
+                </ul>
+            </nav>
     </header>
     <main>
         <section class="preguntas-frecuentes">
             <article>
-                <h2>PREGUNTAS FRECUENTES</h2>
-                    <p class="preguntas">1-¿Cada cuánto tiempo debo acudir al dentista?</p>
-                    <p class="preguntas">2-¿La limpieza dental duele?</p>
-                    <p class="preguntas">3-¿Atienden urgencias dentales?</p>
-                    <p class="preguntas">4-¿Atienden niños?</p>
-                    <p class="preguntas">5-¿Realizan tratamientos estéticos?</p>
+                <h2 class="subrayado">PREGUNTAS FRECUENTES</h2>
+                    <details>
+                        <summary class="preguntas">1-¿Cada cuánto tiempo debo acudir al dentista?</summary>
+                        <p class="bloque-respuesta">Se recomienda visitar al dentista cada 6 meses para realizar controles y limpiezas preventivas. Esta frecuencia ayuda a detectar problemas a tiempo y mantener una buena salud bucal. Sin embargo, puede variar según las necesidades de cada paciente.</p>
+                    </details>
+                    <details>
+                        <summary class="preguntas">2-¿La limpieza dental duele?</summary>
+                        <p class="bloque-respuesta">En general, una limpieza dental no duele. Es un procedimiento simple que remueve sarro y placa bacteriana. Algunas personas pueden sentir una ligera molestia o sensibilidad, sobre todo si no han realizado limpiezas en mucho tiempo.</p>
+                    </details>
+                    <details>   
+                         <summary class="preguntas">3-¿Atienden urgencias dentales?</summary>
+                         <p class="bloque-respuesta">Sí, atendemos urgencias dentales. Recomendamos llamar o acercarse al consultorio para evaluar la situación. En algunos casos se puede asistir sin turno, dependiendo de la gravedad y disponibilidad del profesional.</p>
+                    </details>
+                    <details>
+                         <summary class="preguntas">4-¿Atienden niños?</summary>
+                         <p class="bloque-respuesta"> Si, brindamos atención médica para todas las edades. Todos nuestros pacientes son importantes y son bienvenidos en nuestros consultorios los 365 dias del año.</p>
+                    </details>
+                    <details>
+                        <summary class="preguntas">5-¿Realizan tratamientos estéticos?</summary>
+                        <p class="bloque-respuesta">Los unicos tratamientos estéticos que realizamos en nuestros consultorios son, limpiezas y ortodoncias. Cualquier duda debe ser charlada en una consulta con un profesional, podemos recomendar a otros colegas.</p>
+                    </details>
             </article>
         </section>
-        <section class="tips">
-                <h2>TIPS PARA TU CUIDADO DENTAL</h2>
-            <article>
-                <img src="img/cepillado-dental.PNG" alt="muela-cepillo-dientes">
+        <section class="tips-preguntas">
+                <h2 class="subrayado">TIPS PARA TU CUIDADO DENTAL</h2>
+             <div class="bloque-izquierda">
+            <article class="contenedor-tips">
+                <img class="imagenes-tips" src="img/cepillado-dental.PNG" alt="muela-cepillo-dientes" height="180px" width="200px">
+                <div class="texto-contenido_preguntas">
                 <h4>Cepillado dental</h4>
                     <p>El cepillado es fundamental para eliminar la placa bacteriana y los restos de comida. Se recomienda hacerlo al menos dos veces al día, usando un cepillo suave y pasta dental con flúor.</p>
-            </article>
-            <article>
-                <img src="img/enjuague-bucal.PNG" alt="muela-enjuague-dientes">
+                </div>
+                </article>
+            <article class="contenedor-tips">
+                <img class="imagenes-tips" src="img/enjuague-bucal.PNG" alt="muela-enjuague-dientes" height="190px" width="170px">
+                <div class="texto-contenido_preguntas">
                 <h4>Enjuague Bucal</h4>
-            <p>Complementa la higiene bucal eliminando bacterias y dejando una sensación de frescura. Es útil para prevenir el mal aliento y reforzar la protección contra las caries.</p>
-            </article>
-            <article>
-                <img src="img/uso-hilo-dental.PNG" alt="muela-hilo-dental">
+                    <p>Complementa la higiene bucal eliminando bacterias y dejando una sensación de frescura. Es útil para prevenir el mal aliento y reforzar la protección contra las caries.</p>
+                </div>
+            </div>
+            <div class="bloque-derecha">
+                </article>
+            <article class="contenedor-tips">
+                <img class="imagenes-tips" src="img/uso-hilo-dental.PNG" alt="muela-hilo-dental" height="190px" width="200px">
+                <div class="texto-contenido_preguntas">
                 <h4>Uso del hilo dental</h4>
-            <p>El hilo dental limpia las zonas entre los dientes donde el cepillo no llega. Su uso diario previene caries interdentales y cualquier tipo de problema  en las encías.</p>
+                    <p>El hilo dental limpia las zonas entre los dientes donde el cepillo no llega. Su uso diario previene caries interdentales y cualquier tipo de problema  en las encías.</p>
+                </div>
             </article>
-            <article>
-                <img src="img/limpieza-profesional.PNG" alt="muela-limpieza-dientes">
+            <article class="contenedor-tips">
+                <img class="imagenes-tips" src="img/limpieza-profesional.PNG" alt="muela-limpieza-dientes" height="190px" width="180px">
+                <div class="texto-contenido_preguntas">
                 <h4>Limpieza Profesional</h4>
             <p>Las limpiezas dentales realizadas por un profesional eliminan el sarro acumulado y ayudan a mantener las encías sanas. Se recomienda hacerlas cada 6 meses.</p>
+            </div>
             </article>
+            </div>
         </section>
     </main>
-    <footer>
+    <footer class="footer">
+    <section class="container_botonera">
+        <h3 class="botonera_h3">BOTONERA</h3>
+                <ul class="container_ul">
+                  <li><a href="tratamientos">Tratamientos</a></li>
+                  <li><a href="turnos.html">Turnos</a></li>
+                  <li><a href="turnos.html">Contacto</a></li>
+                  <li><a href="turnos.html">Mi cuenta</a></li>
+                  <li><a href="index.html#obrasocial">Obra Social</a></li>
+                  <li><a href="turnos.html">Ubicación</a></li>
+                  <li><a href="index.html#precio">Precios</a></li>
+                  <li><a href="index.html">¿Quiénes Somos?</a></li>
+                  <li><a href="preguntas.html">Preguntas Frecuentes</a></li>
+                  <li><a href="profesionales.html">Profesionales</a></li>
+                </ul>
+    </section>
 
+    <section class="parte_equipo">
+      <img class="img_muelafooter" src="img/footer/boton-subir-web.png">
+        <p class="p_footer">¿Querés formar parte de nuestro equipo?</p>
+          <p><a href="formulario">Formulario</a></p>
+    </section>
+ 
+  <section class="redes">
+        <article>
+            <ul>
+                <li><a href="#"><img src="img/iconos/redes/ig.png" alt="Instagram"></a></li>
+                <li><a href="#"><img src="img/iconos/redes/img-logo-youtube.svg.png" alt="YouTube"></a></li>
+                <li><a href="#"><img src="img/iconos/redes/fb.png" alt="Facebook"></a></li>
+                <li><a href="#"><img src="img/iconos/redes/tw.png" alt="Twitter"></a></li>
+            </ul>
+        </article>
+        <article>
+            <p class="redes_p">Horarios: Lu. a Vi. 9 a 18 hs.</p>
+            <p class="redes_p">Email de consultorio: info@odontoquilmes.com.ar</p>
+            <p class="redes_p">Dirección Principal: Quilmes - Alvear 674 oficina 1</p>
+            <p class="redes_p">Número Telefónico: +54 1166004130 </p>
+        </section>
+
+        <div class="footer-bottom">
+            <p>© 2025 Odonto Quilmes. Todos los derechos reservados. </p>
+            <p>| Términos y condiciones | Política de privacidad</p>
+        </div>
     </footer>
 </body>
 </html>
