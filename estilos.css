@@ -143,3 +143,12 @@ h4 {
 .bloque-derecha{
     display: flex;
 }
+
+@media screen and (max-width: 600px)
+{
+     {
+        padding: 20px;
+        margin:0px;
+    }
+
+}
