@@ -7,6 +7,17 @@
     box-sizing: border-box;
 } 
 
+body{
+  display: flex;
+  flex-direction: column;
+  font-family: "Lato", sans-serif;
+
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 .header_container{
   max-width: 100vw;
   height: 15vh;
@@ -16,6 +27,28 @@
   align-items: center;
   font-family: "Lato"; 
 }
+
+.items { /nav/
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  gap: 60px;
+}
+
+nav a:hover { 
+  color: #EF8057;
+  border-bottom: 2px solid #EF8057;}
+
+.items a { 
+  padding: 0.3rem 1rem;
+  color: #0E1F35;
+  text-decoration: none;
+}
+
 .footer {
   display: flex;
   flex-wrap: wrap;
@@ -72,6 +105,75 @@
   color: #EF8057;
 }
 
+.parte_equipo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 100px 0px 0px;
+}
+
+.parte_equipo p a {
+  display: inline-block;
+  background-color: #f27648;
+  padding: 10px 20px;
+  border-radius: 20px;
+  color: #fff;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.parte_equipo p a:hover {
+  background-color: #EF8057;
+}
+
+.redes {
+  flex: 1;
+  color: #0E1F35;
+}
+
+.redes ul {
+  display: flex;
+  gap: 37px;
+  padding: 10px 0;
+}
+
+.redes h2 {
+    margin-bottom: 10px;
+}
+
+.redes p {
+    margin: 5px 0;
+}
+
+.formulario {
+border-radius: 5%;}
+
+.img_muelafooter {
+position: absolute;
+top: -37%;
+right: 46%;
+}
+
+.footer-bottom {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #0E1F35; /* azul oscuro */
+  text-align: center;
+  padding: 10px 50px;
+  color: white;
+  font-size: 12px;
+  margin-top: 40px;
+  font-family: "Lato";
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+/*MANU - PREGUNTAS FRECUENTES + TIPS*/
+
 h2 {
     color:orange
 }
@@ -84,6 +186,7 @@ h4 {
     flex-wrap: wrap;
     flex-direction: column;
     align-content: center;
+    margin-top: 80px;
 }
 
 .preguntas {
@@ -131,9 +234,10 @@ h4 {
 }
 
 .contenedor-tips {
-     display:flex;
+    display:flex;
     flex-direction: row;
     align-items: center;
+    gap:20px;
 }
 
 .bloque-izquierda {
@@ -146,7 +250,7 @@ h4 {
 
 @media screen and (max-width: 600px)
 {
-     {
+     header {
         padding: 20px;
         margin:0px;
     }
